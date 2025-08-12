@@ -1,0 +1,139 @@
+/* Import Google Fonts for a more stylish font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0073e6;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for Login and Register buttons */
+nav ul li a:hover, nav ul li button:hover {
+    color: #ffcc00;
+    background-color: #ff6f00;
+    transform: scale(1.1);
+}
+
+/* Hero Section Styling */
+.places {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.place-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Styling for clickable place cards */
+.place-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for place cards */
+.place-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside place cards */
+.place-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image hover effect */
+.place-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+.place-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.place-card p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .place-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

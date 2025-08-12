@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Travel India</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link to login.css -->
+</head>
+<body>
+    <header>
+        <h1>Login to Travel India</h1>
+    </header>
+
+    <section class="login-form">
+        <form onsubmit="return handleLogin(event)">
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <p><a href="index.html">Go to Home Page</a></p> <!-- Link to Home Page -->
+    </section>
+
+    <script src="login.js"></script>
+    <script src="common.js"></script> <!-- Include common.js -->
+</body>
+</html>

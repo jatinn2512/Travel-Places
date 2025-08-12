@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Travel India</title>
+    <link rel="stylesheet" href="register.css"> <!-- Link to register.css -->
+</head>
+<body>
+    <header>
+        <h1>Create Your Account</h1>
+    </header>
+
+    <section class="register-form">
+        <form onsubmit="return handleRegister(event)">
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+        <p><a href="index.html">Go to Home Page</a></p> <!-- Link to Home Page -->
+    </section>
+
+    <script src="register.js"></script>
+    <script src="common.js"></script> <!-- Include common.js -->
+</body>
+</html>
