@@ -27,9 +27,4 @@ This project was the starting point of my web development journey, helping me le
 
 ---
 
-## 🚀 Live Demo
-*(Add your hosted link here once deployed)*
-
----
-
 **Built with ❤️ by [Jatin](https://github.com/jatinn2512)**
